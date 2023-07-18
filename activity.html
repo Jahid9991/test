@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,601,600,401,501,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./activity.css" />
+  </head>
+  <body>
+    <section class="nav-section">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.svg" alt="" srcset="" />
+        </a>
+        <div class="d-flex justify-content-end align-items-center with-btn">
+          <button class="cv-btn">
+            <a class="bg-primary text-light rounded-pill" href="#"
+              >Curriculum Vitae</a
+            >
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="d-flex flex-column navbar-toggler-icon">
+              <div id="first-hr"></div>
+              <div id="second-hr"></div>
+            </span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto justify-content-between">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html"
+                >Home </a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./book.html">Books</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./activity.html">Activities<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mentors.html">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link bg-primary text-light rounded-pill px-3 cv"
+                href="#"
+                >Curriculum Vitae</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section
+      class="d-flex justify-content-between flex-column align-items-center gallery"
+    >
+      <div class="container buttons">
+        <div class="btn-container-buttons">
+          <button type="button" class="btn-clicked">all</button>
+          <button type="button" data-btn="1">Teacher</button>
+          <button type="button" data-btn="2">Books</button>
+          <button type="button" data-btn="3">Leadedrship</button>
+          <button type="button" data-btn="4">Programming</button>
+          <button type="button" data-btn="5">Social Work</button>
+          <button type="button" data-btn="6">Others</button>
+        </div>
+      </div>
+
+      <div class="container dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span>all</span>
+          <img src="./assets/img/expand_more.svg" alt="" />
+        </button>
+        <div class="container dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button">all</button>
+          <button class="dropdown-item" type="button" data-btn="1">
+            Teacher
+          </button>
+          <button class="dropdown-item" type="button" data-btn="2">
+            Books
+          </button>
+          <button class="dropdown-item" type="button" data-btn="3">
+            Leadedrship
+          </button>
+          <button class="dropdown-item" type="button" data-btn="4">
+            Programming
+          </button>
+          <button class="dropdown-item" type="button" data-btn="5">
+            Social Work
+          </button>
+          <button class="dropdown-item" type="button" data-btn="6">
+            Others
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5 card-container skills-container"></div>
+    </section>
+    <footer >
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container d-flex justify-content-lg-between align-items-center flex-wrap copyright ">
+        <div class="copyright-text">
+          COPYRIGHT 2022 © Shahariar Ryehan | ALL RIGHTS RESERVED
+        </div>
+        <div class="social">
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+          <a href="" class="social-icon">
+            <img src="./assets/img/mdi_twitter.svg" alt="" srcset="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./activity.js"></script>
+  </body>
+</html>
